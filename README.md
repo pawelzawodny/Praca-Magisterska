@@ -1,7 +1,7 @@
 ### Portal społecznościowy na potrzeby środowiska alpinistów i wspinaczy wysokogórskich
 #### *Paweł Zawodny*
 
-* [PDF Szkic](link)
+* [PDF](https://github.com/pawelzawodny/Praca-Magisterska/blob/master/Mgr.pdf)
 
 ### Wprowadzenie:
 
