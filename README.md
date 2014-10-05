@@ -1,4 +1,4 @@
-### Portal społecznościowy ukierunkowany na potrzeby środowiska alpinistów i wspinaczy wysokogórskich.
+### Portal społecznościowy na potrzeby środowiska alpinistów i wspinaczy wysokogórskich
 #### *Paweł Zawodny*
 
 * [PDF Szkic](link)
