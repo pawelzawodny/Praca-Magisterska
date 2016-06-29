@@ -3,6 +3,21 @@
 
 * [PDF](https://github.com/pawelzawodny/Praca-Magisterska/blob/master/Mgr.pdf)
 
+## Update 1.0
+
+Crawler używa modułu request.
+Baza danych to MongoDB.
+Crawler opiera się na liście urli do Państw, które zapisane są w bazie danych.
+Następnie przeprowadzana jest iteracja po wszystkich szczytach dostępnych dla danego Państwa.
+Każdy nowy szczyt jest zapisywany w bazie z informacją o jego wysokości i lokalizacji.
+Dla każdego szczytu oraz każdej dostępnej jego wysokości pobierana jest prognoza pogody.
+Z racji słabej czytelności tabeli i faktu, że wyniki są pokazywane zawsze najświeższe na dany moment, trzeba tłumaczyć je na przybliżone daty.
+Zapisywane są wiatr, temperatury, opady, wysokość pokrywy lodowej, wschód i zachód słońca.
+Skanowanie państwa trwa ok 10s.
+
+![](screen1.png)
+![](screen2.png)
+
 ### Wprowadzenie:
 
 Jako aktywny wspinacz, alpinista i podróżnik niemalże na co dzień stykam się z problemami jakie dotykają ludzi integrujących się wokół tych, bądź co bądź niecodziennych zainteresowań.
@@ -30,10 +45,5 @@ Michael Hartl, Aurelius Prochazka: RailsSpace: Building a Social Networking Webs
 Jonathan Strickland, How to Start a Social Networking Site, [dostęp 25.09.14]
 http://computer.howstuffworks.com/internet/social-networking/information/start-social-networking-site.htm
 
-Hendrickson, Mark. Nine Ways to Build Your Own Social Network. TechCrunch. 24.06.2007. 
+Hendrickson, Mark. Nine Ways to Build Your Own Social Network. TechCrunch. 24.06.2007.
 http://www.techcrunch.com/2007/07/24/9-ways-to-build-your-own-social-network/
-
-
-
-
-
