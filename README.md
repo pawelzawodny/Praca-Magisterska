@@ -3,6 +3,15 @@
 
 * [PDF](https://github.com/pawelzawodny/Praca-Magisterska/blob/master/Mgr.pdf)
 
+## Update 2.0
+Aplikacja gotowa w swojej 1 wersji rozwojowej.
+Całość zotała przepisana na nowy framework, dodany zostal modul fornt-endowy napisany w Angular2.
+Efekty mozna zobaczyc na heroku pod adresem: https://weatherviewer.herokuapp.com/
+Jeśli chodzi o odpalenie projektu lokalnie to odpalamy npm install w folderze projektu a nastepnie w folderze FRONT.
+W pliku views/app.config.ts usawiamy odpowiedni lokalny adres ip do polaczenia z API.
+W pliku config/mysql.js ustawiamy odpowiednie parametry polaczenia do lokalnej bazy mysql.
+W obu projektach odpalamy npm start i pod odpowiednim adresem powinnismy zobaczyc dzialajaca aplikacje.
+
 ## Update 1.0
 
 Crawler używa modułu request.
