@@ -27,8 +27,9 @@
     "should": "latest"
   },
   "scripts": {
-    "start": "actionhero start",
-    "actionhero": "actionhero",
-    "test": "NODE_ENV=test mocha"
-  }
+      "start": "actionhero start cluster",
+      "test-start": "actionhero start",
+      "actionhero": "actionhero",
+      "test": "NODE_ENV=test mocha"
+    }
 }
