@@ -27,7 +27,7 @@
     "should": "latest"
   },
   "scripts": {
-      "start": "actionhero start cluster",
+      "start": "actionhero start cluster --workers=2",
       "test-start": "actionhero start",
       "actionhero": "actionhero",
       "test": "NODE_ENV=test mocha"
