@@ -1,0 +1,107 @@
+.top-wrap{
+  .form-control{
+    color: #fff;
+  }
+}
+.landing-page .header .title{
+  color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 20px;
+}
+.search-box{
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  .full-size{
+    width: 100%;
+    color: #000;
+    font-size: 23px;
+  }
+}
+
+.randomMountainsContainer{
+  li{
+    h3{
+      cursor: pointer;
+    }
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    color: rgba(0, 0, 0, 0.8);
+    list-style: none;
+    width: 30%;
+    float: left;
+    margin: 10px;
+  }
+}
+.weather-icon{
+  font-size: 40px;
+}
+.mountain-h-temp{
+  font-size: 30px;
+  padding-top: 8px;
+}
+
+.mountain-wrap{
+  .weather-icon{
+    font-size: 70px;
+    padding-top: 20px;
+  }
+  .mountain-h-temp{
+    padding-top: 0;
+    .col-md-12{
+      margin-bottom: 15px;
+      span{
+        float: left;
+      }
+      small, .small{
+        font-size: 35%;
+        float: left;
+        margin-left: 5px;
+      }
+    }
+  }
+  .page-header {
+    background-size: cover;
+    height: 47vh;
+    margin: 0;
+
+    .container {
+      padding-top: 20vh;
+      color: #FFFFFF;
+      text-align: center;
+    }
+    .title {
+      color: #FFFFFF;
+    }
+  }
+  .about-description {
+    padding: 70px 0px 0px 0px;
+  }
+  .about-services {
+    padding-top: 10px;
+  }
+  .about-office .description {
+    margin-bottom: 70px;
+  }
+  .about-office img {
+    margin: 20px 0px;
+  }
+  .about-contact {
+    padding: 80px 0px;
+    .description {
+      margin-bottom: 70px;
+    }
+  }
+  .forecast-date{
+    margin-top: 35px;
+  }
+  .forecast-row{
+
+    border-bottom: 1px solid #dcdcdc;
+    padding-top: 13px;
+    padding-bottom: 13px;
+
+  }
+}

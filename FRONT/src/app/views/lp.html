@@ -1,0 +1,24 @@
+<div class="wrapper top-wrap">
+  <div class="header header-filter" style="background-image: url('https://images.unsplash.com/photo-1443996104801-80c82e789b18?dpr=2&auto=format&crop=entropy&fit=crop&w=1450&h=750&q=80&cs=tinysrgb');">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="search-box col-md-6 col-md-offset-3">
+            <h1 class="title text-center">Pokaż pogodę dla szczytu:</h1>
+            <div class="">
+              <md-input class="full-size"  #searchVal (keyup.enter)="search(searchVal.value)" placeholder="Nazwa szczytu lub kraj">
+              </md-input>
+
+            </div>
+
+
+          </div>
+          <div class="randomMountainsContainer col-md-12">
+            <randomMountains></randomMountains>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>

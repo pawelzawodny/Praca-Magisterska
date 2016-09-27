@@ -1,0 +1,25 @@
+<div class="mountain-wrap">
+  <navigation></navigation>
+  <div class="page-header header-filter" data-parallax="active" style="background-image: url('https://images.unsplash.com/photo-1443996104801-80c82e789b18?dpr=2&auto=format&crop=entropy&fit=crop&w=1450&h=750&q=80&cs=tinysrgb');">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <h1 class="title">Wyniki wyszukiwania dla: {{ phrase }}</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="main main-raised">
+    <div class="container">
+      <div class="about-team team-1">
+        <div class="row">
+          <div *ngFor="let m of mountains" class="col-md-6 forecast-row">
+            <h3 (click)="onSelect(m)" style="cursor: pointer;">{{ m.name }} <small>{{ m.height }}m, {{ m.country }}</small></h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

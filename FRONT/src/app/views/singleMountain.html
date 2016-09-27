@@ -1,0 +1,67 @@
+<div class="mountain-wrap">
+  <navigation></navigation>
+  <div class="page-header header-filter" data-parallax="active" style="background-image: url('https://images.unsplash.com/photo-1443996104801-80c82e789b18?dpr=2&auto=format&crop=entropy&fit=crop&w=1450&h=750&q=80&cs=tinysrgb');">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <h1 class="title">{{ mountain.name }}</h1>
+          <h4>{{ mountain.height }}m, {{ mountain.country }}</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="main main-raised">
+    <div class="container">
+      <div class="about-description text-center">
+        <div class="row">
+          <a *ngFor="let h of mountain.heights" (click)="onSelect(h, mountain.id)" [ngClass]="{'btn-primary': h == currentHeight}" class="btn">{{ h }}m<div class="ripple-container"></div></a>
+          <h2>Aktualna pogoda na szczycie:</h2>
+          <div class="col-md-4 col-md-offset-4">
+            <div class="col-md-5 weather-icon"><i [ngClass]="getSummaryIcon(forecast.summary)"></i></div>
+            <div class="col-md-7 text-center mountain-h-temp">
+              <div class="col-md-12 text-danger">
+                <span>{{ forecast.maxTemp }}&#8451;</span> <small>Najwyższa</small>
+              </div>
+              <div class="col-md-12 text-success">
+                <span>{{ forecast.lowTemp }}&#8451;</span> <small>Najniższa</small>
+              </div>
+              <div class="col-md-12 text-info">
+                <span>{{ forecast.chillTemp }}&#8451;</span> <small>Odczuwalna</small>
+              </div>
+
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="about-team team-1">
+        <div class="row">
+          <div *ngFor="let f of forecasts" class="col-md-6  text-center forecast-row">
+            <div class="col-md-3 forecast-date">
+              {{ f.createdAt | date:"dd/MM/yy hh:mm"}}<br/>
+              {{ f.height }}m
+            </div>
+            <div class="col-md-3 weather-icon"><i [ngClass]="getSummaryIcon(f.summary)"></i></div>
+            <div class="col-md-6 text-center mountain-h-temp">
+              <div class="col-md-12 text-danger">
+                <span>{{ f.maxTemp }}&#8451;</span> <small>Najwyższa</small>
+              </div>
+              <div class="col-md-12 text-success">
+                <span>{{ f.lowTemp }}&#8451;</span> <small>Najniższa</small>
+              </div>
+              <div class="col-md-12 text-info">
+                <span>{{ f.chillTemp }}&#8451;</span> <small>Odczuwalna</small>
+              </div>
+            </div>
+            <div class="col-md-12 text-center">
+              Opad deszczu: {{ f.rain }}mm | Opad śniegu: {{ f.snow }}mm
+            </div>
+           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
