@@ -186,7 +186,7 @@ var crawl = function (api, params, next) {
 exports.task = {
     name: 'crawler',
     description: 'My Task',
-    frequency: 1000 * 3600 * 5,
+    frequency: 0,//1000 * 3600 * 5,
     queue: 'default',
     middleware: [],
 
