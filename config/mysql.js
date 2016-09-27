@@ -11,7 +11,7 @@ exports['default'] = {
         "dialect"     : "mysql",
         "port"        : port,
         "pool"        : {
-            "maxConnections" : 10,
+            "maxConnections" : 4,
             "maxIdleTime"    : 30000
         },
         "replication" : {
